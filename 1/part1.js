@@ -6,7 +6,7 @@ let sum = 0;
 const tokens = data.split("\n");
 
 for (token of tokens) {
-    sum += Math.floor(token/3) - 2;
+    sum += Math.max(Math.floor(token/3) - 2, 0);
 }
 
 console.log(sum);
